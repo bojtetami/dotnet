@@ -14,7 +14,7 @@ var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
-
+test
 app.MapGet("/api/notes", (NoteStore store) =>
 {
 	return Results.Ok(store.GetAll());
